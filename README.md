@@ -71,19 +71,19 @@ If you've built a full-stack JavaScript application, chances are you're running 
 
 ```
 {
-	"version": 2,
-		"builds": [
-			{
-				"src": "./index.js",
-				"use": "@vercel/node"
-			}
-		],
-		"routes": [
-			{
-				"src": "/(.*)",
-				"dest": "/"
-			}
-	]
+    "version": 2,
+        "builds": [
+            {
+                "src": "./index.js",
+                "use": "@vercel/node"
+            }
+        ],
+        "routes": [
+            {
+                "src": "/(.*)",
+                "dest": "/"
+            }
+        ]
 }
 ```
 Of course, you can change these contents to suit your needs, but this is the basic "plug and play" 					configuration that I found works immediately.
